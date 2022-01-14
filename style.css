@@ -1,0 +1,185 @@
+* {
+    /*Reset*/
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    /*Primary colors*/
+      --light-red-cta-text: hsl(356, 100%, 66%);
+      --very-light-red-cta-hover-background: hsl(355, 100%, 74%);
+      --very-dark-blue-headings: hsl(208, 49%, 24%);
+    /*Neutral colors*/
+      --white-text: hsl(0, 0%, 100%);
+      --grayish-blue-footer-text: hsl(240, 2%, 79%);
+      --very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+      --very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+    /*gradient*/
+      /*Background gradient - Intro/CTA mobile nav:*/
+      --very-light-red: hsl(13, 100%, 72%);
+      --light-red: hsl(353, 100%, 62%);
+      /*Background gradient - body:*/
+      --very-dark-gray-blue: hsl(237, 17%, 21%);
+      --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    /*font*/
+      /*font-family: 'Overpass', sans-serif;
+        font-family: 'Ubuntu', sans-serif;*/
+      font-size: 62.5%;
+}
+
+body{
+  width: 100vw;
+}
+
+header{
+  background: url(./images/bg-pattern-intro-mobile.svg) no-repeat , linear-gradient(95deg, var(--very-light-red), var(--light-red));
+  background-size: 1100px;
+  background-position-x: -230px;
+  background-position-y: -185px;
+  border-radius: 0 0 0 95px ;
+
+  padding: 5.7rem 2.4rem 12rem;
+}
+
+.nav-logo-menuBtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 8rem;
+}
+
+.menu{
+  position: absolute;
+  width: 88%;
+  background: var(--white-text);
+  margin-block-start: 2.4rem;
+  border-radius: 8px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: -1px 15px 15px -5px rgba(0,0,0,0.5);
+}
+
+.hidden-menu{
+  display: none;
+}
+
+.nav-links{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.menu-choice{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.small-menu{
+  display: flex;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--very-dark-black-blue-footer-background);
+}
+
+.small-menu-options{
+  background-color: hsl(240, 15%, 92%);
+  padding: 2.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .8rem;
+  gap: .8rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--very-dark-grayish-blue-body-copy);
+}
+
+.login-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.login-button a:nth-child(1){
+  color: var(--very-dark-black-blue-footer-background);
+}
+
+.login-button a{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.singUp-button{
+  background: linear-gradient(145deg, var(--very-light-red), var(--light-red));
+  color: var(--white-text);
+  padding: 1.2rem 2.8rem;
+  border-radius: 25px;
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: var(--grayish-blue-footer-text);
+}
+
+.header-title{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  text-align: center;
+  color: var(--white-text);
+  margin-block-start: 7.2rem;
+}
+
+.header-description{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--white-text);
+}
+
+.cta-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  margin-block-start: 3.6rem;
+}
+
+.cta-btn{
+  border-radius: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 50px;
+}
+
+.cta-start{
+  color: var(--light-red-cta-text);
+  background-color: var(--white-text);
+}
+
+.cta-learn{
+  border: 1px solid var(--white-text);
+  color: var(--white-text);
+}
