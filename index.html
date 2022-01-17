@@ -22,13 +22,16 @@
     <nav>
       <div class="nav-logo-menuBtn">
         <img class="logo" src="./images/logo.svg" alt="logo">
-        <img src="./images/icon-hamburger.svg" alt="">
+        <img  id="icon-hamburguer" src="./images/icon-hamburger.svg" alt="" onclick="showMenu()">
       </div>
-      <div class="menu hidden-menu">
+      <div class="menu hidden-menu" id="menu">
         <div class="nav-links">
           <div class="menu-choice">
-            <p class="small-menu">Product</p>
-            <div class="small-menu-options">
+            <p class="small-menu" id="product-menu" onclick="showProductMenu()">
+              Product
+              <img src="./images/icon-arrow-dark.svg" alt="" width="10" height="7" id="arrow-icon-one">
+            </p>
+            <div class="small-menu-options hidden-menu" id="product-options">
               <p>Overview</p>
               <p>Pricing</p>
               <p>Marketplace</p>
@@ -37,8 +40,11 @@
             </div>
           </div>
           <div class="menu-choice">
-            <p class="small-menu">Company</p>
-            <div class="small-menu-options">
+            <p class="small-menu" id="company-menu" onclick="showCompanyMenu()">
+              Company
+              <img src="./images/icon-arrow-dark.svg" alt="" width="10" height="7" id="arrow-icon-two">
+            </p>
+            <div class="small-menu-options hidden-menu" id="company-options">
               <p>About</p>
               <p>Team</p>
               <p>Blog</p>
@@ -46,8 +52,11 @@
             </div>
           </div>
           <div class="menu-choice">
-            <p class="small-menu">Connect</p>
-            <div class="small-menu-options">
+            <p class="small-menu" id="connect-menu" onclick="showConnectMenu()">
+              Connect
+              <img src="./images/icon-arrow-dark.svg" alt="" width="10" height="7" id="arrow-icon-three">
+            </p>
+            <div class="small-menu-options hidden-menu" id="connect-options">
               <p>Contact</p>
               <p>Newsletter</p>
               <p>LinkedIn</p>
@@ -143,5 +152,53 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+    function showMenu(){
+      var menu = document.getElementById('menu');
+      var iconHamburger = document.getElementById('icon-hamburger')
+      if (menu.classList.contains('hidden-menu')){
+        menu.classList.remove('hidden-menu')
+      }else{
+        menu.classList.add('hidden-menu')
+      }
+    }
+
+    function showProductMenu(){
+      let productOptions = document.getElementById('product-options')
+      let arrowIcon = document.getElementById('arrow-icon-one')
+      if (productOptions.classList.contains('hidden-menu')) {
+        productOptions.classList.remove('hidden-menu')
+        arrowIcon.classList.add('transform-arrow-icon')
+      } else {
+        productOptions.classList.add('hidden-menu')
+        arrowIcon.classList.remove('transform-arrow-icon')
+      }
+    }
+
+    function showCompanyMenu(){
+      let productOptions = document.getElementById('company-options')
+      let arrowIcon = document.getElementById('arrow-icon-two')
+      if (productOptions.classList.contains('hidden-menu')) {
+        productOptions.classList.remove('hidden-menu')
+        arrowIcon.classList.add('transform-arrow-icon')
+      } else {
+        productOptions.classList.add('hidden-menu')
+        arrowIcon.classList.remove('transform-arrow-icon')
+      }
+    }
+
+    function showConnectMenu(){
+      let productOptions = document.getElementById('connect-options')
+      let arrowIcon = document.getElementById('arrow-icon-three')
+      if (productOptions.classList.contains('hidden-menu')) {
+        productOptions.classList.remove('hidden-menu')
+        arrowIcon.classList.add('transform-arrow-icon')
+      } else {
+        productOptions.classList.add('hidden-menu')
+        arrowIcon.classList.remove('transform-arrow-icon')
+      }
+    }
+  </script>
 </body>
 </html>

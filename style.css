@@ -66,10 +66,6 @@ header{
   box-shadow: -1px 15px 15px -5px rgba(0,0,0,0.5);
 }
 
-.hidden-menu{
-  display: none;
-}
-
 .nav-links{
   width: 100%;
   display: flex;
@@ -85,11 +81,17 @@ header{
 
 .small-menu{
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: .4rem;
   font-family: 'Overpass', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: var(--very-dark-black-blue-footer-background);
+}
+
+.transform-arrow-icon{
+  transform: rotate(180deg);
 }
 
 .small-menu-options{
@@ -182,4 +184,8 @@ header{
 .cta-learn{
   border: 1px solid var(--white-text);
   color: var(--white-text);
+}
+
+.hidden-menu{
+  display: none;
 }
