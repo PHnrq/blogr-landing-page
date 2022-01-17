@@ -22,7 +22,7 @@
     <nav>
       <div class="nav-logo-menuBtn">
         <img class="logo" src="./images/logo.svg" alt="logo">
-        <img  id="icon-hamburguer" src="./images/icon-hamburger.svg" alt="" onclick="showMenu()">
+        <div class="open-menu" onclick="showMenu()" id="icon-hamburger"></div>
       </div>
       <div class="menu hidden-menu" id="menu">
         <div class="nav-links">
@@ -156,11 +156,19 @@
   <script>
     function showMenu(){
       var menu = document.getElementById('menu');
-      var iconHamburger = document.getElementById('icon-hamburger')
+      var iconHamburger = document.getElementById('icon-hamburger');
+
       if (menu.classList.contains('hidden-menu')){
         menu.classList.remove('hidden-menu')
       }else{
         menu.classList.add('hidden-menu')
+      }
+      if (iconHamburger.classList.contains('open-menu')){
+        iconHamburger.classList.remove('open-menu')
+        iconHamburger.classList.add('close-menu')
+      }else{
+        iconHamburger.classList.remove('close-menu')
+        iconHamburger.classList.add('open-menu')
       }
     }
 

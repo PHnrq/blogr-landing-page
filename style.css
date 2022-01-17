@@ -52,6 +52,18 @@ header{
   width: 8rem;
 }
 
+.open-menu{
+  width: 32px; 
+  height: 18px;
+  background-image: url(./images/icon-hamburger.svg);
+}
+
+.close-menu{
+  width: 26px;
+  height: 26px;
+  background-image: url(./images/icon-close.svg);
+}
+
 .menu{
   position: absolute;
   width: 88%;
