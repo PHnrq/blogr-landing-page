@@ -201,3 +201,92 @@ header{
 .hidden-menu{
   display: none;
 }
+
+.desinged-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desinged-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4.8rem;
+}
+
+section img{
+  margin-block-start: 3.4rem;
+}
+
+
+.section-title{
+  font-family: 'Overpass', sans-serif;
+  color: var(--very-dark-blue-headings);
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-block-start: 8.8rem;
+  margin-block-end: 3.4rem;
+  text-align: center;
+}
+
+.section-descrption{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--very-dark-grayish-blue-body-copy);
+  text-align: center;
+}
+
+.stateOfArt-section{
+  position: relative;
+  height: 788px;
+}
+
+.stateOfArt-section div{
+  background-color: var(--very-dark-gray-blue);
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 2.6rem;
+  border-radius: 0 95px;
+  position: relative;
+  top: -222px;
+  z-index: -1;
+  background-position-x: center;
+  background-position-y: -236px;
+  background-size: cover;
+}
+
+.stateOfArt-section div h2, .stateOfArt-section div p{
+  color: var(--white-text);
+}
+
+footer{
+  padding: 7.2rem 2.4rem;
+  background-color: var(--very-dark-black-blue-footer-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+  border-radius: 0 95px 0 0;
+  margin-block-start: 5.6rem;
+}
+
+footer div:not(.attribution) h4{
+  margin-block-end: 1.6rem;
+}
+footer div:not(.attribution){
+  display: flex;
+  flex-direction: column;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
+  color: var(--grayish-blue-footer-text);
+  align-items: center;
+}
