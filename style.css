@@ -33,10 +33,10 @@ body{
 }
 
 header{
-  background: url(./images/bg-pattern-intro-mobile.svg) no-repeat , linear-gradient(95deg, var(--very-light-red), var(--light-red));
-  background-size: 1100px;
-  background-position-x: -230px;
-  background-position-y: -185px;
+  background: url(./images/bg-pattern-intro-mobile.svg), linear-gradient(130deg, var(--very-light-red), var(--light-red));
+  background-size: 1100px, cover;
+  background-position-x: -230px, 0;
+  background-position-y: -185px, 0;
   border-radius: 0 0 0 95px ;
 
   padding: 5.7rem 2.4rem 12rem;
