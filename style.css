@@ -92,7 +92,7 @@ header{
   gap: 1.6rem;
 }
 
-.small-menu{
+.small-menu, .small-menu span{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,6 +287,7 @@ footer{
 footer div:not(.attribution) h4{
   margin-block-end: 1.6rem;
 }
+
 footer div:not(.attribution){
   display: flex;
   flex-direction: column;
@@ -357,13 +358,30 @@ footer div:not(.attribution){
     padding: .8rem 2.4rem 0;
   }
 
+  .small-menu span{
+    color: var(--white-text);
+  }
+
+  .small-menu:hover span{
+    cursor: pointer;
+    border-bottom: 2px solid var(--white-text);
+  }
+
   .small-menu-options {
     background-color: var(--white-text);
     width: 130px;
     border-radius: unset;
     color: black;
+    font-weight: 300;
     position: absolute;
+    align-items: flex-start;
+    border-radius: .8rem;
     top: 98px;
+  }
+
+  .small-menu-options p:hover{
+    cursor: pointer;
+    font-weight: 600;
   }
 
   .nav-links .menu-choice:nth-child(2) .small-menu-options{
@@ -383,6 +401,18 @@ footer div:not(.attribution){
     color: var(--light-red-cta-text);
     padding: 1.2rem 2.8rem;
     border-radius: 25px;
+  }
+
+  .singUp-button:hover, .cta-start:hover{
+    color: var(--white-text);
+    background-color: var(--very-light-red);
+    cursor: pointer;
+  }
+
+  .cta-learn:hover{
+    color: var(--light-red-cta-text);
+    background-color: var(--white-text);
+    cursor: pointer;
   }
 
   #arrow-icon-one, #arrow-icon-two, #arrow-icon-three{
