@@ -309,9 +309,17 @@ footer div:not(.attribution){
 }
 
 @media screen and (min-width:768px) {
+  header{
+    background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(130deg, var(--very-light-red), var(--light-red));
+    background-repeat: no-repeat;
+    background-size: 300rem, cover;
+    background-position-x: -39.5rem, 0;
+    background-position-y: -125rem, 0;
+  }
+  
   nav{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5.6rem;
   }
 
@@ -329,7 +337,7 @@ footer div:not(.attribution){
     box-shadow: unset;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     justify-content: space-between;
     flex: 1;
@@ -346,7 +354,21 @@ footer div:not(.attribution){
 
   .small-menu{
     color: var(--white-text);
+    padding: .8rem 2.4rem 0;
   }
+
+  .small-menu-options {
+    background-color: var(--white-text);
+    width: 130px;
+    border-radius: unset;
+    color: black;
+    position: absolute;
+    top: 98px;
+  }
+
+  .nav-links .menu-choice:nth-child(2) .small-menu-options{
+    left: 309px;
+  } 
 
   .divider{
     display: none;
