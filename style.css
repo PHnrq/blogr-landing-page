@@ -34,6 +34,7 @@ body{
 
 header{
   background: url(./images/bg-pattern-intro-mobile.svg), linear-gradient(130deg, var(--very-light-red), var(--light-red));
+  background-repeat: no-repeat;
   background-size: 1100px, cover;
   background-position-x: -230px, 0;
   background-position-y: -185px, 0;
@@ -202,13 +203,6 @@ header{
   display: none;
 }
 
-.desinged-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .content-wrapper{
   display: flex;
   flex-direction: column;
@@ -225,6 +219,7 @@ header{
 
 section img{
   margin-block-start: 3.4rem;
+  width: 375px;
 }
 
 
@@ -311,4 +306,64 @@ footer div:not(.attribution){
 .attribution a {
    font-size: 11px; 
    color: hsl(240, 12%, 90%); 
+}
+
+@media screen and (min-width:768px) {
+  nav{
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
   }
+
+  #icon-hamburger{
+    display: none;
+  }
+
+  .menu {
+    position: unset;
+    width: unset;
+    background: unset;
+    margin-block-start: unset;
+    border-radius: unset;
+    padding: unset;
+    box-shadow: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .nav-links{
+    flex-direction: row;
+    width: unset;
+  }
+
+  .login-button{
+    flex-direction: row;
+  }
+
+  .small-menu{
+    color: var(--white-text);
+  }
+
+  .divider{
+    display: none;
+  }
+
+  .login-button a:nth-child(1) {
+    color: var(--white-text);
+  }
+
+  .singUp-button {
+    background: var(--white-text);
+    color: var(--light-red-cta-text);
+    padding: 1.2rem 2.8rem;
+    border-radius: 25px;
+  }
+
+  #arrow-icon-one, #arrow-icon-two, #arrow-icon-three{
+    content: url(./images/icon-arrow-light.svg);
+  }
+}
