@@ -28,10 +28,6 @@
       font-size: 62.5%;
 }
 
-body{
-  width: 100vw;
-}
-
 header{
   background: url(./images/bg-pattern-intro-mobile.svg), linear-gradient(130deg, var(--very-light-red), var(--light-red));
   background-repeat: no-repeat;
@@ -316,6 +312,7 @@ footer div:not(.attribution){
     background-size: 300rem, cover;
     background-position-x: -39.5rem, 0;
     background-position-y: -125rem, 0;
+    padding-inline: 16rem;
   }
   
   nav{
@@ -384,10 +381,6 @@ footer div:not(.attribution){
     font-weight: 600;
   }
 
-  .nav-links .menu-choice:nth-child(2) .small-menu-options{
-    left: 309px;
-  } 
-
   .divider{
     display: none;
   }
@@ -417,5 +410,35 @@ footer div:not(.attribution){
 
   #arrow-icon-one, #arrow-icon-two, #arrow-icon-three{
     content: url(./images/icon-arrow-light.svg);
+  }
+
+  .designed-section{
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+  }
+
+  .content-wrapper{
+    position: relative;
+    align-items: flex-start;
+    padding-inline-start: 16rem;
+    top: -3rem;
+  }
+
+  .section-title, .section-descrption{
+    text-align: start;
+  }
+
+  .section-wrapper h2{
+    position: relative;
+    font-size: 3.4rem;
+    top: 10rem;
+  }
+
+  .illu-editor{
+    content: url(./images/illustration-editor-desktop.svg);
+    position: relative;
+    width: 70rem;
+    left: 20rem;
+    top: -3rem;
   }
 }
