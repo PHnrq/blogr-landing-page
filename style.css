@@ -441,4 +441,59 @@ footer div:not(.attribution){
     left: 20rem;
     top: -3rem;
   }
+
+  .stateOfArt-section{
+    position: unset;
+    height: unset;
+  }
+  
+
+  .stateOfArt-section{
+    background-image: url(./images/bg-pattern-circles.svg), linear-gradient(135deg, #2C2D3F 0%, #3F4164 99.31%);;
+    background-repeat: no-repeat, repeat;
+    background-position-y: -50rem, 0rem;
+    background-position-x: -22rem,0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 15rem 0rem 11rem;
+    border-radius: 0 95px;
+    height: 43rem;
+    margin-block-start: 2.4rem;
+  }
+
+  .stateOfArt-section img{
+    width: auto;
+  }
+  
+  .stateOfArt-section div{
+    display: flex;
+    flex-direction: column;
+    align-content: unset;
+    align-items: unset;
+    justify-content: unset;
+    position: relative;
+    top: -5rem;
+    left: 5rem;
+
+    background-image: unset;
+    background-repeat: unset;
+    padding: unset;
+    border-radius: unset;
+    z-index: unset;
+    background-position-x:unset;
+    background-position-y: unset;
+    background-size: unset;
+  }
+  
+  .stateOfArt-section div h2{
+    font-size: 3.6rem;
+    color: var(--white-text);
+    position: unset;
+  }
+  
+  .stateOfArt-section div p{
+    color: var(--grayish-blue-footer-text);
+  }
 }
