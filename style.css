@@ -496,4 +496,22 @@ footer div:not(.attribution){
   .stateOfArt-section div p{
     color: var(--grayish-blue-footer-text);
   }
+
+  .illu-laptop{
+    content: url(./images/illustration-laptop-desktop.svg);
+    width: auto;
+    position: relative;
+    left: -275px;
+  }
+
+  .illu-laptop-section{
+    flex-direction: row;
+    margin-block-start: 3.6rem;
+  }
+
+  .illu-laptop-section div{
+    position: relative;
+    left: -160px;
+    top: -20px;
+  }
 }
