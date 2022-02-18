@@ -213,6 +213,10 @@ header{
   align-items: center;
 }
 
+.illu-laptop-section{
+  padding-inline: 3.2rem;
+}
+
 section img{
   margin-block-start: 3.4rem;
   width: 375px;
@@ -312,7 +316,7 @@ footer{
    color: hsl(240, 12%, 90%); 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
   header{
     background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(130deg, var(--very-light-red), var(--light-red));
     background-repeat: no-repeat;
@@ -532,4 +536,8 @@ footer{
     align-items: flex-start;
     gap: 20rem;
   }
+}
+
+@media screen and (min-width:2560px){
+  
 }
