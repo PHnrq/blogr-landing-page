@@ -295,6 +295,11 @@ footer{
   margin-block-end: 1.6rem;
 }
 
+.footer div p:hover{
+  cursor: pointer;
+  border-bottom: white solid 2px;
+}
+
 .footer div{
   display: flex;
   flex-direction: column;
